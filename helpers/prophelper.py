@@ -1,10 +1,7 @@
-import crypt;
-import base64;
-
-base64.encode()
-file = open('', 'rt')
-# read the values
-# split using =
-# get the key and value
-# chances the value is encrypted
-# crypt api and decrypt
+class PropertyHelper:
+    def __init__(self):
+        self.props = {};
+        config =open("d:/config.properties");
+        for line in config:
+            data = line.strip().split(":");
+            self.props[data[0]]=data[1];

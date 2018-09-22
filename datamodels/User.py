@@ -1,17 +1,24 @@
-class Group:
-    # method allows me to create empty group
+class User:
+    """
+        Class documentation
+    """
     def __init__(self):
-        self.grouName= None;
-        self.users = [];
+        """
+            my constructor
+        """
+        self.username = None;
+        self.password = None;
 
+    def test(self):
+        """about the method"""
+        pass;
 
-    # allow me to add users to group
-    def addUser(self, user):
-        self.users.append(user);
+    def __del__(self):
+        pass;
 
-
-    # remove all the users
-    def removeUsers(self):
-        self.users = [];
-
+    def __repr__(self):
+        if self.username is not None and self.password is not None:
+            return self.username + "," + self.password;
+        else:
+            return "Empty User";
 

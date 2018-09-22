@@ -1,16 +1,14 @@
-from dao import UserDAO;
-from datamodels import User,Group;
+from helpers import PropertyHelper;
+import base64;
+import mysql.connector;
 
+config = PropertyHelper();
+print(base64.b64encode(b'root'));
 
-def createUser():
-    userDAO = UserDAO();
-    user = User();
-    user.username = "nilesh";
-    user.password = "nilesh";
-    group = Group();
-    group.grouName = "admin";
-    group.addUser(user);
-    userDAO.save(user);
-
-
-createUser();
+username = base64.b64decode(config.props['username'])
+password = base64.b64decode(config.props['password']);
+host = config.props['host'];
+port = config.props['port']
+dbname = config.props['dbname']
+conn = mysql.connector.connect(user=username, password=password , host=host, port=port, database=dbname);
+print(conn.is_connected());
