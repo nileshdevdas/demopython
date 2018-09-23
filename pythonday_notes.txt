@@ -1,0 +1,1283 @@
+class HelloWorld: 
+	x = 10; 
+	y = 20; 
+	z = 30; 
+
+	def hello(self):
+		print("xxxx"); 
+
+
+
+Class is prototype from a class i can create objects objects address memory address 
+in which you code runs which mean object from the class is a unique object and may 
+behave differently on the basis of what state is availble 
+
+a class has  state holder and behaviour holding features 
+	when i write class i can make the behaviour change as per i change the state 
+	inside class complete reusability code 
+
+in python are there constructors 
+in python are there main methods 
+in python are there overloading scenarios 
+
+functions are structure programming typically they are in terms procedural 
+they dont need any objects 
+
+methods are inside classes and they definitely need and object before calling them 
+when you define function you will never to pass (self) myself (this) in other 
+other programming languages 
+
+programming in python functions , methods 
+function 
+
+def funcName(): // function  
+	body 
+
+class  className: 
+	def methodName(self): // method 
+		body 
+
+Modules :  are nothing but folder and for python to identify a module you will need 
+	to create a simple file __init__.py to identify that this a module 
+
+
+
+
+
+
+1. import is used to import modules and classes inside it 
+
+2. class : class  it can beused in your code by instantiating it 
+				 () // instantiating the class 
+3. from 
+4. module : 
+		 folder : HelloWorld --->  prefix package/module 
+5. init 
+
+
+first when a person write a class : Identify the name class and then 
+he declare the class : as long as the class not ambigous 
+
+
+when do i use import : 
+when i want to make use of modules or classes inside the module i make 
+use of the import 
+
+There are two ways to do the import 
+import sys; 
+sys.argv 
+
+
+from sys import argv; 
+argv 
+
+
+from sys import xxxxxx; 
+
+sys.
+from sys import argv; 
+argv which access 
+
+import numpy; --> looks for this folder in the lib ---> __init__.py
+from __init__.py it understand how many classes have been named from the files 
+
+from file import thatclass 
+
+
+can be used for importing  interal / external modules 
+can be used 
+
+import modulex; 
+modulex.refertottheclass 
+
+class 
+put the class in the module 
+if the class is added to the module : 
+import
+can i have constructors in a class 
+yes you can have constructors in the class 
+		def __init__(self): 
+			print('xxxx'); 
+
+if __main__ we need understand how main functions are related 
+
+a) import 
+b) __init__.py 
+c) class 
+d) __init__(self):  // intializer or constructors 
+e) modules ---> folder having __init__.py 
+
+1. folder --> calculators 
+2. you will need to create a file __init__.py (marks this as module) 
+3. you will need to create class : 
+	StatCalculator.py 
+
+	   class StatCalculator:
+	   		def __init__(self):
+	   			  print('xxx'); 
+
+	   	    def mymethod(self):
+	   	    	print('xxxxx')
+
+calculators 
+    __init__.py 
+      from StatCalculator import StatCalculator; 
+
+
+    StatCalculator.py 
+         StatCalculator 
+
+---------------------------------------------------------------------------------
+import calculators; 
+
+a = calculators.StatCalculator(); // instantiating of the StatCalculator
+once i instantiate the StatCalculator // __init__ method gets called 
+once the object is create i have a full access to the object methods 
+self  iam talking the object this : 
+
+Car 
+Student
+Bank 
+
+
+How to declare a 
+
+class className: 
+	 def __init__(self): 
+	 	  print('constructor'); 
+
+	 def  method1(self, a, b):
+	 	   print('method'); 
+
+a = className(): 
+a.method1(); 
+
+
+
+How to intantiate a class : 
+If you class in in your same project there is no need of import 
+a = new className() // java 
+python does have new (); 
+
+a = className(); 
+a.method1(); 
+
+
+
+Steps : 
+create a folder 
+inside the folder create __init__.py // this marks this folder a python module/package 
+you can create you own classes or own files inside this package 
+
+now if you wish to use the classes directly name : 
+
+in the __init__.py
+
+you ready to use this package / module 
+
+i create .py file outside my package: 
+
+import this module : 
+import xxxxx; 
+
+
+
+
+
+Database installation of mysql 
+Toad for mysql 
+
+start --> run --> services.msc
+mysql
+
+We are going are going to work on class 
+modules/package 
+file io 
+Exception Handling 
+Pickling 
+Database 
+Debugging 
+Io
+
+classes 
+
+
+class <nameOfClass>: 
+
+    def __init__(self): 
+
+
+A class can have a attribute 
+	a class attribute can be accessed directly by using 
+		ClassName.attribute 
+
+A object can also have a attribute 
+	    Object attriute cannot be acessed directly using ClassName.objAttribute
+	    it needs you to first intantiate the obect () and travese or refer 
+	    	to the instance attribute 
+
+def a(): 
+	
+class A: 
+
+
+
+
+a = A(); 
+del a; 
+
+As long as the object is available in the address space the object available 
+def __myprivateMethod(): 
+
+
+
+
+
+1. Constructor   yes
+    def __init___(self): 
+
+2. Destructor  yes 
+    def __del__(self): 
+
+3. Class : class Variable 
+	class A: 
+	    username = None;  // class variable
+
+	A.username; (Work)
+
+
+4. Object : Object Variable 
+	class A: 
+	    def __init__(self): 
+	       self.username = "Nilesh"; 
+	a = A(); 
+	a.username(); 
+
+5. self == this and is used typically object referneces 
+
+6. class have methods of   def method(self); 
+	method can have arguments can be named argument and arguments can have 
+	default values 
+	def a(self, args)  / varargs 
+	def a(a=10) // args wth default value 
+	def a(a, b, c=10)  args with non default and defaul values 
+
+7.  Inheritence 
+	
+	class A: 
+		pass 
+
+	class A2
+
+    class B(A,A2): 
+    	pass 
+
+
+MultiLEvel
+A--->B----->C
+
+	 class A:
+
+
+
+
+     class B(A): 
+
+
+
+
+     class C(B)
+
+
+
+
+
+
+class ClassOne: 
+    username = "Nilesh"; 
+
+
+class ClassTwo:
+    username  = "Suresh"; 
+
+
+
+class ClassThree(ClassOne, ClassTwo):
+       def getInfo(self):
+           print(self.username); 
+
+
+cl1 = ClassThree(); 
+cl1.getInfo(); 
+
+
+class can extend another class ---> 
+
+  class BaseClass: // class  
+      pass; 
+
+
+  class SubClass(BaseClass):  // inheritence 
+      pass; 
+
+
+  class MultipleInClass(BaseClass1, BaseClass2):  // multiple 
+
+
+  class SubSubClass(SubClass):  /// multi level 
+
+
+
+
+
+
+
+
+
+classes 
+scripts 
+py files 
+functions 
+methods 
+intheritence 
+dict 
+list
+tuples
+set // collections 
+variables 
+for
+while
+if 
+range()
+
+
+import package; 
+
+what is a package 
+what feature does the package have 
+and how to find the help package 
+
+
+
+
+Class CSVParser
+   the csv parser class should have :  a method parse(); 
+   the parse method should accept a parameter : 
+   the parameter is a file name from the file which you wish to read 
+
+   on the you have read the file its you should be able to iterate the records 
+   and retreive each of the record and try to find the transaction type 
+
+	only valid transaction you will append to a set  
+	and once the valid transaction are idendtified you will create 
+	a sum  of that  set and print the outcomes  
+
+	the file name must come from a command parameter and the parameter that you 
+	use should be passed everytime the program runs 'fileName'
+
+class <className>: 
+      def __init__(self): 
+      	  pass; 
+
+      def parse(self, fileName): 
+          myfile = open(fileName , 'rt');
+          for row in myfile: 
+              cols = row.split(','); 
+              	if cols has values 17; 
+              	  its a valid record 
+              	  a list and list.append(record); 
+              	  you will need finally sum(list);
+
+
+      def  __del__(self): 
+       		pass; 
+
+parser =CSVParser(); 
+parser.parse(sys.arv[1]); // this is your filem from the command  
+
+c:\\
+c:/
+
+
+
+class CSVParser:
+     def __init__(self):
+         print("Constructor")
+         self.record = [];
+
+     def parse(self, filename):
+         if filename==None:
+             raise AttributeError("invalid file name")
+         else:
+             myfile = open(filename, 'rt');
+             for eachline in myfile:
+                 data = eachline.strip().split(',');
+                 print(data)
+                 if "17" in data:
+                     print("Yes")
+                     self.record.append(1);
+             totalRecs = sum(self.record)
+             print(totalRecs);
+
+     def __del__(self):
+         print("Destrcutor");
+
+parser = CSVParser();
+parser.parse("c:/test.txt");
+
+
+
+nilesh,17,10:00,success
+nilesh,17,10:00,success
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+try: 
+    connect to a db 
+    try to run a code in sql 
+    some sql erorr 
+    close(conn)// line of code 
+except ZeroDivisionError as err: 
+   print(error): 
+finally: 
+
+
+
+When ever i think of Exception Handling i always think of error handling and control 
+a) Program recover back from known exception : 
+b) prorgram cannot recover back from unknown exception 
+con=
+try:
+   sql 
+   block of code 
+except Exception as err: 
+   print(err); 
+finally: 
+	//resource resleasing
+	print("xxxxxxx")
+	closing the connection 
+
+
+
+
+we want to now make use of packages 
+
+program a want version mysql 2.05 (application is stable using version 2.05)
+program who want use a mysql 2.15 (????? )
+
+install 2.05 and if it gets installed globally i will have a challenge for global because both programs will startusing 
+the new version ? 
+
+
+virtual env 
+
+Steps 1: 
+You need pip 
+Where is my pip 
+my pip is always in the script folder 
+
+To create a virtual Env in Python you will first need to isntall virtualenv (in the global scope')
+
+pip install virtualenv
+
+
+
+We are trying to create a virtual environment 
+
+Advantages of virtual Environment : 
+create a sperate library system for your project 
+what pips /easy_install
+these library installers will install a copy in you local project folder rather than installing this in the global folder 
+
+Step1 : First you will reach the python\Scripts 
+
+Step2:  pip list | find "virtualenv"
+
+if the output of the above comamnd is none 
+
+Step 3:  pip install virtualenv 
+
+Step 4 :  dir virtualenv.exe  
+
+Step 5 :   exit from this directory and check if virtualenv works from anywhere if yes you have your c:\Python27\Scripts in your path if not you will need to setup you python27\Scripts as  a part of you path 
+
+step 6  : if virtualenv is workgin 
+		virtualenv <project>
+
+step 7 : you will ned to activate the project 
+		cd <project>\Scripts 
+			activate --< set the env variables 
+
+
+step 8 :  pip install <the pip module>
+
+a set of development team want to work on a single project 
+a project is just piece of code .... 
+do you expect me to bundle whole python environment and share that env in the svn/git/repo  (No )
+I want to share only the project source code .... 
+
+My Colleague who download this project how will he come to know what dependencies are required to execute the project ? 
+and how will he be able to create them 
+
+
+firs
+
+
+
+
+pip freeze > requirements.txt 
+i woudl all the requirement for your project 
+
+
+
+
+
+ide now has a inbuild virutal env 
+ide now has the required libaries 
+
+
+
+
+
+
+
+
+
+A application 
+    will different modules
+    	datamodels
+    		User // class 
+    	dao
+    		UserDOA 
+    			save
+    			update
+    			delete 
+    			find
+    			findAll
+    	helpers
+    		CSVParser 
+
+    	utils
+    		AuditUtility
+
+    	validators
+
+
+    	tests
+
+    main.py  
+
+    // main.py should be able to call the all the method of all the classes so that we you 
+    __init__.py 
+    import 
+    from 
+
+
+    you will pycharm 
+    you will use document 
+
+
+
+
+nilesh.devdas@vinsys.com : officialid 
+
+nilesh.devdas@outlook.com --> skype 
+
+
+
+for It admin : siddharth@vinshs.com 
+for Logistics : kapil.kulkarni@vinsys.com 
+for Techncalities Training Doubts : nilesh.devdas@vinsys.com 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Python - Day 3 :
+
+1. System Check
+
+2. In your system 
+	c:\python27
+	c:\python3 
+
+3. open the start --> run --> cmd --> 
+			git --> and check if git is installed 
+
+4. pycharm installed in your system 
+
+5. mysql start --> run ---> services.msc ---> 
+			username : root 
+			password : root123 
+			database : test      // default database 
+
+6. We definitely going the url browsing api 
+
+7. datetime and timers , BeatifulSoup 
+
+8. RegEx 
+
+9. File IO and Sys and OS Api 
+
+10. Data Modelling 
+-------------------------------------------------------------------------------------------------------------------------
+http://www.github.com   
+	please sign in an account --> userid / password 
+
+siddharth@vinsys.com
+
+
+https://lab.vinsys.com
+
+
+
+
+
+What is python ?
+Interpeted ..... 
+Advantages  2.7 3.x 
+32 / 64 
+Documentation 
+
+python : 
+REPL 
+Zen of python : \t 
+python is available 
+
+variable ---> Class variable  // inside the class but is not attached to the  instance
+			  normal variable // global 
+			  object variable instance the instance 
+
+data type 
+int 
+float 
+complex 
+input 
+print(); 
+
+argv (sys)
+if 
+elif 
+loops 
+
+Collections 
+list 
+set 
+dict 
+array 
+range()
+
+tuples(); 
+file(); 
+
+two type  binary , text 
+
+open(); 
+pickle --> store the state of an object to the file and retrieve the state 
+
+store 100 values int he and if piclke the list i would be getting a complete list in the  file 
+
+function : parameter , return type seent 
+	functiona and method 
+
+
+var args , dict ,  named parmeter .. write type function 
+
+
+exception handling 
+try
+except
+finally 
+
+
+package __inti__.py 
+
+import 
+from xxxx import xx ; 
+
+packages 
+
+
+class 
+initializer (Constructurs )
+Desctructors 
+Object methods 
+self 
+instance of a class 
+Instance data 
+instance methods 
+
+CSVParser 
+
+
+PyCharm --> 
+Debug 
+Profile 
+Test Cases (Unit Testing )
+Using Version 
+Database connectivity 
+Using Libraries for WEb SCraping 
+Using libraries for sending emails 
+Using Libraries for Parsing XMl 
+Using Libraries for Parsing jSon 
+Using Libraries for Http Calls 
+
+
+
+lambda 
+innner functions 
+
+
+Open Toad for MySQL
+
+
+Virtual Environment :- 
+venv --> 
+Why phython wants a virtual 
+requirements.txt 
+------------------------------------
+pip 
+virtualenv 
+
+
+
+
+
+host : localhost 
+port : 3306 
+username : root 
+password : root123 
+db      : test 
+
+
+
+
+
+
+git init --> init 
+
+git add *  --> add your files 
+
+git commit  * -m "Why are you commit" //
+
+<-- git remote add orgin ---->
+
+git push 
+
+
+
+
+
+1. Create a new project 	
+
+2. Connect to db 
+
+3.  you need push your code to the git 
+
+4. ........
+
+
+Single Database requires and api to connect 
+pypi you will see a lot api to connect to different database ---> 
+
+you need to download the package --> 
+easy_install 
+pip 
+
+
+create a simple index.py 
+
+ 	 right click open in terminal 
+
+ 	 c:\> pip install  mysql-connector 
+
+
+1. 2 ways encrypt  (symetrical encryption | assymetric encryption)
+you can encrypt with the same key and decrypt with the same 
+
+assymetric (PKI ) public key infrastructure --> You encrypt using public keys but can decrypt only using the private key 
+
+https://github.com/nileshdevdas/demopython.git
+
+
+
+
+
+
+
+
+
+
+crypto 2 elements 
+a) key---> SALT 
+b) Algorigthm 
+aloghrigh --> encrypt data ---> Key
+
+Hashing MD5/ SHA1 
+
+
+
+
+
+python has lot of libraries 
+
+1. mysql 
+2. postrgres
+3. pymssql
+....... 
+4. read files 
+5. encrypt and decrytp 
+6. encode decode 
+7. make webscraping url requesting 
+8. datetime 
+9. lambda function 
+10. inner function 
+11. genrators 
+12. python pycharm 
+13. python3 
+14. private functions / methods 
+15. repr
+16. How to make __init__.py 
+17. documentation 
+
+
+
+
+
+
+__repr__   (Stand object representation)
+
+when you wish to print object o display the object variable ---> it would point the address space of the object 
+so instead of point to address space if you want some logical outcome description to be printed 
+
+a class can have  __repr__  method 
+					which should return a string ----> 
+
+a = newObject(); 
+
+print(a); 
+it prints the address 
+
+
+private function that __
+
+
+1. re (Regular ex)
+2. numpy 
+3. Rpython 
+
+python dsl 
+
+
+
+
+
+Day 4: 
+
+1. DataFrame (Excel sheet )
+	numpy, pandas,scipy,matplotlib
+
+
+re package : 
+match 
+
+
+2.  pip install pandas 
+    pip install numpy 
+    pin install matplotlib
+
+
+------------------------------------------------------------------------------------------------------------------
+numpy library 
+ndarray (n - d)
+
+
+scipy 
+numpy
+pandas 
+
+--> spark and hdfs 
+--> shards or data grids 
+--> caches and data lakes 
+
+1. Understading--> Distrubted data model 
+2. Sharding --> Distrbuting --> 
+		nosql 
+		bigdata 
+		distbuted database (cassandra, couch , raik , mongo, bigtable)
+		small programs ---> ans send these programs on each node 
+
+
+hpc ->
+
+https://github.com/nileshdevdas/demopython.git
+
+
+
+
+Parallel processing :- 
+
+i have cdr (Call Data Records)
+i need load billions of cdr : i need validate if there is a internation call : if there is a call : revenue based 
+
+thread
+parallel 000--> 
+
+
+nilesh.devdas@vinsys.com
+nilesh.devdas@outlook.com
+
+siddharth@vinsys.com
+
+
+
+
+
+datamodel 
+data frames 
+data modelling numpy
+pandas --> different apsects data modelling in data science 
+threading 
+csv reading 
+indexting data 
+filtering data 
+how make use of the dataframes for  grouping 
+Graphs (Representation of data )
+
+scikit-learn 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+1
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
